@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /launchstudio/d/
+Disallow: /d/
