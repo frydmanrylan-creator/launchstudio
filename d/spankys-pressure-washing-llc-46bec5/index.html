@@ -60,6 +60,11 @@ section.s{padding:104px 0}.head{max-width:640px;margin-bottom:48px}.head h2{font
 .svc-ic{display:grid;place-items:center;width:54px;height:54px;border-radius:15px;background:var(--soft);color:var(--p);margin-bottom:20px}
 .svc h3{font-size:21px;margin-bottom:8px}.svc p{margin:0;color:var(--muted);font-size:15px}
 .work{background:var(--soft)}
+.rvs{padding-top:0}.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.rv-stars{color:var(--a);letter-spacing:2px;font-size:18px;margin-bottom:10px}
+.rv blockquote{margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--ink)}
+.rv figcaption{font-size:13px;color:var(--muted);font-weight:600}
 .gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px}
 .ph{margin:0;border-radius:var(--r);min-height:250px;position:relative;overflow:hidden;color:#fff;
 background:linear-gradient(150deg,var(--p),var(--pd))}
@@ -103,6 +108,7 @@ background:rgba(17,24,32,.92);color:#fff;padding:9px 9px 9px 18px;border-radius:
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.btn,.svc{transition:none}}
 @media (max-width:960px){.hero .wrap,.area{grid-template-columns:1fr}.svcs{grid-template-columns:1fr 1fr}.nav nav a:not(.btn){display:none}}
+@media (max-width:900px){.rv-grid{grid-template-columns:1fr}}
 @media (max-width:640px){.wrap{padding:0 16px}.hero{padding:118px 0 80px}.svcs,.steps,.gal{grid-template-columns:1fr}.ph1{grid-row:auto;min-height:260px}
 section.s{padding:72px 0}.logo span{display:none}.draft{font-size:12.5px;padding-left:14px;bottom:12px}.draft .long{display:none}.draft .short{display:inline;white-space:nowrap}.qcard{padding:22px}}
 </style></head><body>
@@ -129,6 +135,7 @@ section.s{padding:72px 0}.logo span{display:none}.draft{font-size:12.5px;padding
 <section class="s" id="services"><div class="wrap">
 <div class="head reveal"><span class="eyebrow">What we do</span><h2>What we offer in Holt</h2></div>
 <div class="svcs"><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span><h3>House washing</h3><p>Siding and exteriors cleaned safely.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 21L10 3M17 21L14 3M12 7v2M12 13v2M12 19v2"/></svg></span><h3>Driveways &amp; sidewalks</h3><p>Remove oil, grime and stains from concrete.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18M3 14h18M3 18h18M5 10v10M19 10v10"/><path d="M6 10l6-6 6 6"/></svg></span><h3>Decks &amp; patios</h3><p>Bring outdoor living spaces back to life.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9l2-5h12l2 5"/><path d="M4 9v11h16V9"/><path d="M4 9h16"/><path d="M10 20v-5h4v5"/></svg></span><h3>Commercial</h3><p>Storefronts, lots and buildings.</p></article></div></div></section>
+
 
 <section class="s work" id="work"><div class="wrap">
 <div class="head reveal"><span class="eyebrow">Our work</span><h2>See the difference</h2>

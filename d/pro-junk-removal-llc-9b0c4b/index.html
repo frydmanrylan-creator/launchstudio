@@ -60,6 +60,11 @@ section.s{padding:104px 0}.head{max-width:640px;margin-bottom:48px}.head h2{font
 .svc-ic{display:grid;place-items:center;width:54px;height:54px;border-radius:15px;background:var(--soft);color:var(--p);margin-bottom:20px}
 .svc h3{font-size:21px;margin-bottom:8px}.svc p{margin:0;color:var(--muted);font-size:15px}
 .work{background:var(--soft)}
+.rvs{padding-top:0}.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.rv-stars{color:var(--a);letter-spacing:2px;font-size:18px;margin-bottom:10px}
+.rv blockquote{margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--ink)}
+.rv figcaption{font-size:13px;color:var(--muted);font-weight:600}
 .gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px}
 .ph{margin:0;border-radius:var(--r);min-height:250px;position:relative;overflow:hidden;color:#fff;
 background:linear-gradient(150deg,var(--p),var(--pd))}
@@ -103,6 +108,7 @@ background:rgba(17,24,32,.92);color:#fff;padding:9px 9px 9px 18px;border-radius:
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.btn,.svc{transition:none}}
 @media (max-width:960px){.hero .wrap,.area{grid-template-columns:1fr}.svcs{grid-template-columns:1fr 1fr}.nav nav a:not(.btn){display:none}}
+@media (max-width:900px){.rv-grid{grid-template-columns:1fr}}
 @media (max-width:640px){.wrap{padding:0 16px}.hero{padding:118px 0 80px}.svcs,.steps,.gal{grid-template-columns:1fr}.ph1{grid-row:auto;min-height:260px}
 section.s{padding:72px 0}.logo span{display:none}.draft{font-size:12.5px;padding-left:14px;bottom:12px}.draft .long{display:none}.draft .short{display:inline;white-space:nowrap}.qcard{padding:22px}}
 </style></head><body>
@@ -129,6 +135,7 @@ section.s{padding:72px 0}.logo span{display:none}.draft{font-size:12.5px;padding
 <section class="s" id="services"><div class="wrap">
 <div class="head reveal"><span class="eyebrow">What we do</span><h2>What we offer in Trumbull</h2></div>
 <div class="svcs"><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v3"/><path d="M2 12a2 2 0 0 1 4 0v3h12v-3a2 2 0 0 1 4 0v5H2z"/><path d="M5 17v2M19 17v2"/></svg></span><h3>Household junk</h3><p>Furniture, appliances and clutter.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></span><h3>Cleanouts</h3><p>Garages, basements and storage units cleared.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span><h3>Construction debris</h3><p>Leftover materials hauled away.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19c3-4 6-7 10-9"/></svg></span><h3>Yard waste</h3><p>Branches, brush and green waste.</p></article></div></div></section>
+
 
 <section class="s work" id="work"><div class="wrap">
 <div class="head reveal"><span class="eyebrow">Our work</span><h2>See the difference</h2>
