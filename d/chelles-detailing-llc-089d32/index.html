@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Chelles Detailing LLC · website draft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--p:#16161d;--soft:#f1f1f4;--a:#e63946;--ink:#12161c;--muted:#5b6370;--line:#e4e7ec;
+--pd:color-mix(in srgb,var(--p) 70%,#000);--display:"Archivo",Georgia,serif;--r:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;letter-spacing:-.02em}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--p)}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--a);border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;padding:14px 22px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s;border:0;cursor:pointer;font-size:15px;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn-a{background:var(--a);color:#111;box-shadow:0 10px 24px -10px var(--a)}
+.btn-p{background:var(--p);color:#fff}
+.btn-ghost{color:#fff;border:1.5px solid rgba(255,255,255,.35)}.btn-ghost:hover{background:rgba(255,255,255,.1)}
+/* nav */
+.nav{position:absolute;inset:0 0 auto;z-index:5}.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:11px;color:#fff;font-weight:700;font-size:17px}
+.logo i{font-style:normal;display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--a);color:#111;font-weight:800;font-size:14px}
+.nav nav{display:flex;gap:28px;align-items:center;color:rgba(255,255,255,.85);font-size:15px}
+.nav nav a:hover{color:#fff}.nav .btn{padding:10px 18px}
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;padding:150px 0 110px;
+background:radial-gradient(1200px 500px at 85% -10%,color-mix(in srgb,var(--a) 35%,transparent),transparent 60%),
+linear-gradient(160deg,var(--p) 0%,var(--pd) 100%)}
+.hero::after{content:"";position:absolute;inset:0;opacity:.18;pointer-events:none;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.35}
+.b1{width:380px;height:380px;background:var(--a);right:-120px;bottom:-160px}
+.b2{width:260px;height:260px;background:#fff;left:-120px;top:40px;opacity:.08}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:500;backdrop-filter:blur(6px)}
+.pill b{width:7px;height:7px;border-radius:50%;background:var(--a);box-shadow:0 0 0 4px color-mix(in srgb,var(--a) 30%,transparent)}
+.hero h1{font-size:clamp(42px,6.2vw,74px);margin:22px 0 20px;font-weight:700}
+.hero .lead{font-size:19px;max-width:540px;color:rgba(255,255,255,.85);margin:0 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.proof{list-style:none;padding:0;margin:34px 0 0;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;color:rgba(255,255,255,.85)}
+.proof li{display:flex;align-items:center;gap:7px}.proof svg{color:var(--a)}
+/* quote card */
+.qcard{background:#fff;color:var(--ink);border-radius:22px;padding:28px;box-shadow:0 40px 80px -30px rgba(0,0,0,.55);position:relative}
+.qcard::before{content:"";position:absolute;inset:-10px -10px auto auto;width:90px;height:90px;border-radius:22px;background:var(--a);z-index:-1;transform:rotate(12deg)}
+.qcard h2{font-size:26px;margin-bottom:4px}.qcard p{margin:0 0 18px;color:var(--muted);font-size:14px}
+.qcard label{display:block;font-size:13px;font-weight:600;margin:12px 0 6px}
+.qcard input,.qcard select{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fafbfc}
+.qcard input:focus,.qcard select:focus{outline:none;border-color:var(--p);background:#fff}
+.qcard .btn{width:100%;justify-content:center;margin-top:18px}
+.qnote{display:none;margin-top:12px;font-size:13px;background:var(--soft);color:var(--p);padding:10px 12px;border-radius:10px}
+/* sections */
+section.s{padding:104px 0}.head{max-width:640px;margin-bottom:48px}.head h2{font-size:clamp(32px,4.4vw,48px);margin-top:14px}
+.head p{color:var(--muted);font-size:17px;margin:14px 0 0}
+.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px color-mix(in srgb,var(--p) 50%,transparent);border-color:transparent}
+.svc-ic{display:grid;place-items:center;width:54px;height:54px;border-radius:15px;background:var(--soft);color:var(--p);margin-bottom:20px}
+.svc h3{font-size:21px;margin-bottom:8px}.svc p{margin:0;color:var(--muted);font-size:15px}
+.work{background:var(--soft)}
+.rvs{padding-top:0}.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv{margin:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.rv-stars{color:var(--a);letter-spacing:2px;font-size:18px;margin-bottom:10px}
+.rv blockquote{margin:0 0 14px;font-size:16px;line-height:1.6;color:var(--ink)}
+.rv figcaption{font-size:13px;color:var(--muted);font-weight:600}
+.gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:16px}
+.ph{margin:0;border-radius:var(--r);min-height:250px;position:relative;overflow:hidden;color:#fff;
+background:linear-gradient(150deg,var(--p),var(--pd))}
+.ph2{background:linear-gradient(150deg,color-mix(in srgb,var(--a) 85%,#fff),color-mix(in srgb,var(--a) 70%,var(--p)));color:#111}
+.ph3{background:linear-gradient(150deg,color-mix(in srgb,var(--p) 55%,#fff),var(--p))}
+.ph::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-90px;top:-110px;background:rgba(255,255,255,.12)}
+.ph-art{position:absolute;right:22px;top:22px;opacity:.28}
+.ph1 .ph-art svg{width:190px;height:190px}
+.ph figcaption{position:absolute;left:22px;bottom:22px;right:22px}
+.ph figcaption b{display:block;font-family:var(--display);font-size:24px;line-height:1.15;margin-bottom:8px}
+.ph figcaption small{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.18);backdrop-filter:blur(4px)}
+.ph2 figcaption small{background:rgba(0,0,0,.08)}
+.ph1{grid-row:span 2;min-height:520px}.ph1 figcaption b{font-size:34px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.step{position:relative;padding:30px 26px;border-radius:var(--r);background:#fff;border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--display);font-size:46px;font-weight:700;color:var(--a);line-height:1;display:block;margin-bottom:14px}
+.step h3{font-size:21px;margin-bottom:6px}.step p{margin:0;color:var(--muted)}
+.area{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.map{border-radius:22px;min-height:340px;position:relative;overflow:hidden;background-color:var(--p);
+background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:34px 34px}
+.map::before{content:"";position:absolute;left:50%;top:50%;width:220px;height:220px;margin:-110px 0 0 -110px;border-radius:50%;
+background:radial-gradient(circle,color-mix(in srgb,var(--a) 45%,transparent),transparent 70%)}
+.map .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-70%);color:var(--a)}
+.map .city{position:absolute;left:50%;top:50%;transform:translate(-50%,40px);background:#fff;color:var(--ink);font-weight:700;padding:8px 16px;border-radius:999px;font-size:14px;white-space:nowrap;box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}
+.contact{background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px}
+.contact h2{font-size:clamp(28px,3.4vw,40px);margin:12px 0 22px}
+.c-row{display:flex;gap:14px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}
+.c-row span{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--soft);color:var(--p);flex:none}
+.c-row small{display:block;color:var(--muted);font-size:13px}.c-row b{font-weight:600;word-break:break-word}
+.cta{background:var(--pd);color:#fff;text-align:center;padding:96px 0;position:relative;overflow:hidden}
+.cta h2{font-size:clamp(34px,5vw,58px);max-width:760px;margin:0 auto 26px}
+.cta .blob{width:420px;height:420px;left:50%;top:-240px;margin-left:-210px;background:var(--a);opacity:.25}
+.cta .wrap{position:relative}
+footer{padding:34px 0 110px;color:var(--muted);font-size:14px}footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+/* draft notice */
+.draft{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:20;display:flex;align-items:center;gap:14px;
+background:rgba(17,24,32,.92);color:#fff;padding:9px 9px 9px 18px;border-radius:999px;font-size:14px;box-shadow:0 20px 40px -14px rgba(0,0,0,.5);backdrop-filter:blur(10px);max-width:calc(100% - 24px)}
+.draft a{background:#183bf2;color:#fff;font-weight:600;padding:9px 16px;border-radius:999px;white-space:nowrap;display:inline-flex;gap:6px;align-items:center}
+.draft span{opacity:.9}.draft .short{display:none}
+/* motion */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.btn,.svc{transition:none}}
+@media (max-width:960px){.hero .wrap,.area{grid-template-columns:1fr}.svcs{grid-template-columns:1fr 1fr}.nav nav a:not(.btn){display:none}}
+@media (max-width:900px){.rv-grid{grid-template-columns:1fr}}
+@media (max-width:640px){.wrap{padding:0 16px}.hero{padding:118px 0 80px}.svcs,.steps,.gal{grid-template-columns:1fr}.ph1{grid-row:auto;min-height:260px}
+section.s{padding:72px 0}.logo span{display:none}.draft{font-size:12.5px;padding-left:14px;bottom:12px}.draft .long{display:none}.draft .short{display:inline;white-space:nowrap}.qcard{padding:22px}}
+</style></head><body>
+<header class="nav"><div class="wrap">
+<a class="logo" href="#"><i>CD</i><span>Chelles Detailing LLC</span></a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#work">Our work</a><a href="#area">Service area</a>
+<a class="btn btn-a" href="#quote">Book a detail</a></nav></div></header>
+
+<section class="hero"><span class="blob b1"></span><span class="blob b2"></span><div class="wrap">
+<div><span class="pill"><b></b>Auto detailing · Rapid City, SD</span>
+<h1>Showroom shine, wherever you are.</h1>
+<p class="lead">Chelle&#x27;s Mobile Detailing brings interior and exterior detailing and headlight restoration right to your driveway in Rapid City.</p>
+<div class="actions"><a class="btn btn-a" href="#quote">Book a detail <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="tel:6055193070"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> (605) 519-3070</a></div>
+<ul class="proof"><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg> 5.0 stars from 13 Google reviews</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg> Based in Rapid City</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg> Call (605) 519-3070</li><li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg> Quote requests online</li></ul></div>
+<form class="qcard" id="quote" onsubmit="event.preventDefault();this.querySelector('.qnote').style.display='block'">
+<h2>Get a quote</h2><p>Tell us a little about the job.</p>
+<label for="qn">Your name</label><input id="qn" autocomplete="name" placeholder="Jane Smith">
+<label for="qp">Phone</label><input id="qp" type="tel" autocomplete="tel" placeholder="(555) 123-4567">
+<label for="qs">What do you need?</label><select id="qs"><option>Exterior</option><option>Interior</option><option>Full detail</option><option>Add-ons</option></select>
+<button class="btn btn-p" type="submit">Book a detail <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+<p class="qnote" role="status">This is a preview. On your real site, requests like this go straight to you.</p>
+</form></div></section>
+
+<section class="s" id="services"><div class="wrap">
+<div class="head reveal"><span class="eyebrow">What we do</span><h2>What we offer in Rapid City</h2></div>
+<div class="svcs"><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3H3z"/><circle cx="7" cy="16" r="1.5"/><circle cx="17" cy="16" r="1.5"/></svg></span><h3>Exterior detail</h3><p>Wash, decontamination and protection.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 3v4M17 5h4"/></svg></span><h3>Interior detail</h3><p>Vacuum, shampoo and wipe-down.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><h3>Full detail</h3><p>Inside and out, top to bottom.</p></article><article class="svc reveal"><span class="svc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="5" cy="6" r="1"/><circle cx="5" cy="12" r="1"/><circle cx="5" cy="18" r="1"/></svg></span><h3>Add-ons</h3><p>Headlights, engine bay and more.</p></article></div></div></section>
+
+
+<section class="s work" id="work"><div class="wrap">
+<div class="head reveal"><span class="eyebrow">Our work</span><h2>See the difference</h2>
+<p>Your own photos go here. Before-and-after shots are the best way to show customers what you do.</p></div>
+<div class="gal"><figure class="ph ph1 reveal"><span class="ph-art"><svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3H3z"/><circle cx="7" cy="16" r="1.5"/><circle cx="17" cy="16" r="1.5"/></svg></span><figcaption><b>Exterior detail</b><small><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg> Your photo goes here</small></figcaption></figure><figure class="ph ph2 reveal"><span class="ph-art"><svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 3v4M17 5h4"/></svg></span><figcaption><b>Interior detail</b><small><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg> Your photo goes here</small></figcaption></figure><figure class="ph ph3 reveal"><span class="ph-art"><svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><figcaption><b>Full detail</b><small><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg> Your photo goes here</small></figcaption></figure></div></div></section>
+
+<section class="s"><div class="wrap">
+<div class="head reveal"><span class="eyebrow">How it works</span><h2>Simple from start to finish</h2></div>
+<div class="steps">
+<div class="step reveal"><h3>Get in touch</h3><p>Call, text or send a quote request with what you need.</p></div>
+<div class="step reveal"><h3>Get your quote</h3><p>We confirm the details and give you a clear price.</p></div>
+<div class="step reveal"><h3>Book it</h3><p>Pick a time that works for you and you're all set.</p></div>
+</div></div></section>
+
+<section class="s" id="area" style="padding-top:0"><div class="wrap area">
+<div class="map reveal" role="img" aria-label="Service area: Rapid City, SD"><span class="pin"><svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><span class="city">Rapid City, SD</span></div>
+<div class="contact reveal"><span class="eyebrow">Contact</span><h2>Proudly serving Rapid City and nearby</h2><a class="c-row" href="tel:6055193070"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><div><small>Call or text</small><b>(605) 519-3070</b></div></a><a class="c-row" href="mailto:chellesmobiledetailingllc@gmail.com"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><small>Email</small><b>chellesmobiledetailingllc@gmail.com</b></div></a><div class="c-row"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><small>Service area</small><b>Rapid City, SD</b></div></div><div class="c-row"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg></span><div><small>Hours</small><b>Monday: 9:00 AM – 5:30 PM<br>Tuesday: 9:00 AM – 5:30 PM<br>Wednesday: 9:00 AM – 5:30 PM<br>Thursday: 9:00 AM – 5:30 PM<br>Friday: 9:00 AM – 5:30 PM<br>Saturday: Closed<br>Sunday: Closed</b></div></div></div>
+</div></section>
+
+<section class="cta"><span class="blob"></span><div class="wrap"><h2>Showroom shine, wherever you are.</h2>
+<a class="btn btn-a" href="#quote">Book a detail <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></section>
+
+<footer><div class="wrap"><span>© Chelles Detailing LLC</span><span>Website draft by Rylan's Launch Studio. Photos and final wording are added once you approve.</span></div></footer>
+
+<div class="draft" role="note"><span class="long">Free website draft for <b>Chelles Detailing LLC</b> by Rylan's Launch Studio. Not an official site.</span><span class="short">Free draft · not an official site</span>
+<a href="https://frydmanrylan-creator.github.io/launchstudio/?demo=chelles-detailing-llc-089d32&amp;b=Chelles%20Detailing%20LLC#brief">Make it yours <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+</script>
+</body></html>
